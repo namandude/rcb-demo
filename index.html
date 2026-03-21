@@ -29,23 +29,28 @@
             transition: 0.3s;
         }
 
-        /* Merchandise button (gold theme) */
         .merch {
             background: linear-gradient(45deg, #d4af37, #f1c40f);
         }
 
         .merch:hover {
-            background: linear-gradient(45deg, #b8962e, #d4ac0d);
             transform: scale(1.05);
         }
 
-        /* Ticket button (RCB red theme) */
         .ticket {
             background: linear-gradient(45deg, #ff1e1e, #b30000);
         }
 
         .ticket:hover {
-            background: linear-gradient(45deg, #cc0000, #800000);
+            transform: scale(1.05);
+        }
+
+        /* New button style (blue theme) */
+        .info {
+            background: linear-gradient(45deg, #1e90ff, #0047ab);
+        }
+
+        .info:hover {
             transform: scale(1.05);
         }
     </style>
@@ -64,6 +69,13 @@
     <div class="pur-tck-blk">
         <a href="https://shop.royalchallengers.com/ticket">
             <span class="buy-tck-spn ticket">BUY TICKETS</span>
+        </a>
+    </div>
+
+    <!-- NEW Third Button -->
+    <div class="pur-tck-blk">
+        <a href="#">
+            <span class="buy-tck-spn info">VIEW DETAILS</span>
         </a>
     </div>
 
