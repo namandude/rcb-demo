@@ -2,22 +2,70 @@
 <html>
 <head>
     <title>RCB Demo</title>
+
+    <style>
+        body {
+            background-color: #0c0c0c;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .pur-tck-blk a {
+            text-decoration: none;
+        }
+
+        .buy-tck-spn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        /* Merchandise button (gold theme) */
+        .merch {
+            background: linear-gradient(45deg, #d4af37, #f1c40f);
+        }
+
+        .merch:hover {
+            background: linear-gradient(45deg, #b8962e, #d4ac0d);
+            transform: scale(1.05);
+        }
+
+        /* Ticket button (RCB red theme) */
+        .ticket {
+            background: linear-gradient(45deg, #ff1e1e, #b30000);
+        }
+
+        .ticket:hover {
+            background: linear-gradient(45deg, #cc0000, #800000);
+            transform: scale(1.05);
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- This is EXACTLY the same HTML structure as royalchallengers.com -->
-    <!-- Currently shows BUY MERCHANDISE (no tickets) -->
-
+    <!-- Merchandise Button -->
     <div class="pur-tck-blk">
         <a href="https://shop.royalchallengers.com/merchandise">
-            <span class="buy-tck-spn">BUY MERCHANDISE</span>
+            <span class="buy-tck-spn merch">BUY MERCHANDISE</span>
         </a>
     </div>
 
-    <!-- TO SIMULATE TICKETS GOING LIVE:
-         Change "BUY MERCHANDISE" to "BUY TICKETS"
-         and href to /ticket
-         Bot will detect it and fire email instantly -->
+    <!-- Tickets Button -->
+    <div class="pur-tck-blk">
+        <a href="https://shop.royalchallengers.com/ticket">
+            <span class="buy-tck-spn ticket">BUY TICKETS</span>
+        </a>
+    </div>
 
 </body>
 </html>
